@@ -14,15 +14,17 @@
   </head>
   <body>
     <div id="app">
-      <div class="container">
+      <div class="bigContainer">
         <h1>Spotify Music</h1>
-        <div class="card" v-for="music in arrMusic" :key="music.singer">
-          <div class="image">
-            <img src="" alt="" />
-            <div class="content">
-              <div class="title">{{ music.title }}</div>
-              <div class="singer">{{ music.singer }}</div>
-              <div class="year">{{ music.year }}</div>
+        <div class="container">
+          <div class="card" v-for="music in arrMusic" :key="music.singer">
+            <div class="image">
+              <img src="" alt="" />
+              <div class="content">
+                <div class="title">{{ music.title }}</div>
+                <div class="singer">{{ music.singer }}</div>
+                <div class="year">{{ music.year }}</div>
+              </div>
             </div>
           </div>
         </div>

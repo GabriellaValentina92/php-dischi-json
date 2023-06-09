@@ -9,15 +9,11 @@ createApp({
 
   methods: {
     getData() {
-      axios
-        .get(
-          "http://localhost:8080/esercizi%20pome%20php-backend/php-dischi-json/data.php"
-        )
-        .then((response) => (this.arrMusic = response.data));
+      console.log("ciao");
+      axios.get("data.php").then((response) => (this.arrMusic = response.data));
     },
-
-    created() {
-      this.getData();
-    },
+  },
+  created() {
+    this.getData();
   },
 }).mount("#app");
