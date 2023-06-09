@@ -15,10 +15,15 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
-  padding: 0.5rem;
+  padding: 0.7rem;
+  background-color: rgb(2, 2, 36);
 }
 
 .card {
   flex: 0 0 30%;
   padding: 0.5rem;
+  background-color: rgb(10, 125, 131);
+  color: white;
+  border: 1px solid white;
+  text-align: center;
 }
