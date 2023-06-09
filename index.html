@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify Music</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js" defer></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"
+      defer
+    ></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div id="app">
+      <div class="container">
+        <h1>Spotify Music</h1>
+        <div class="card" v-for="music in arrMusic" :key="music.singer">
+          <div class="image">
+            <img src="" alt="" />
+            <div class="content">
+              <div class="title">{{ music.title }}</div>
+              <div class="singer">{{ music.singer }}</div>
+              <div class="year">{{ music.year }}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
