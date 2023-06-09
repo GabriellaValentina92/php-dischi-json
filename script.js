@@ -11,7 +11,7 @@ createApp({
     getData() {
       axios
         .get(
-          "http://localhost:8080/esercizi%20pome%20php-backend/php-dischi-json/data.json"
+          "http://localhost:8080/esercizi%20pome%20php-backend/php-dischi-json/data.php"
         )
         .then((response) => (this.arrMusic = response.data));
     },
