@@ -23,7 +23,16 @@
   flex: 0 0 30%;
   padding: 0.5rem;
   background-color: rgb(10, 125, 131);
-  color: white;
   border: 1px solid white;
+}
+
+.content {
   text-align: center;
+  line-height: 1.5rem;
+  color: white;
+  font-size: 0.8rem;
+}
+
+.content h1 {
+  font-size: 1rem;
 }
