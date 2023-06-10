@@ -22,11 +22,21 @@
 .card {
   flex: 0 0 30%;
   padding: 0.5rem;
-  background-color: rgb(10, 125, 131);
   border: 1px solid white;
+  background-color: rgb(10, 125, 131);
+  margin-bottom: 0.8rem;
+}
+
+.image {
+  width: 60%;
+}
+
+.card img {
+  width: 100px;
 }
 
 .content {
+  width: 40%;
   text-align: center;
   line-height: 1.5rem;
   color: white;

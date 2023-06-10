@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -19,12 +19,12 @@
         <div class="container">
           <div class="card" v-for="music in arrMusic" :key="music.singer">
             <div class="image">
-              <img src="" alt="" />
-              <div class="content">
-                <h1 class="title">{{ music.title }}</h1>
-                <div class="singer">{{ music.singer }}</div>
-                <div class="year">{{ music.year }}</div>
-              </div>
+              <img :src="music.album_cover" alt="" />
+            </div>
+            <div class="content">
+              <h1 class="title">{{ music.title }}</h1>
+              <div class="singer">{{ music.singer }}</div>
+              <div class="year">{{ music.year }}</div>
             </div>
           </div>
         </div>
