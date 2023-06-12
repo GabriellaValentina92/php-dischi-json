@@ -21,6 +21,7 @@
 
 .card {
   flex: 0 0 30%;
+  height: 300px;
   padding: 0.5rem;
   border: 1px solid white;
   background-color: rgb(10, 125, 131);
